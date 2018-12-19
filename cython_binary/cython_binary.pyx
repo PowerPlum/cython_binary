@@ -25,7 +25,7 @@ def readin_binary(filename, int number_of_points):
         print("file not found")
     else:                       
         print("Read file {}".format(filename))
-        fread(&header_bytes, 1, number_of_points, in_binary_file)
+        fread(header_bytes, 1, number_of_points, in_binary_file)
     
     fclose(in_binary_file)
     return header_bytes    

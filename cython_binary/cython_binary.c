@@ -1286,7 +1286,7 @@ static PyObject *__pyx_pf_13cython_binary_13cython_binary_readin_binary(CYTHON_U
  *         print("file not found")
  *     else:
  *         print("Read file {}".format(filename))             # <<<<<<<<<<<<<<
- *         fread(&header_bytes, 1, number_of_points, in_binary_file)
+ *         fread(header_bytes, 1, number_of_points, in_binary_file)
  * 
  */
   /*else*/ {
@@ -1313,16 +1313,16 @@ static PyObject *__pyx_pf_13cython_binary_13cython_binary_readin_binary(CYTHON_U
     /* "cython_binary/cython_binary.pyx":28
  *     else:
  *         print("Read file {}".format(filename))
- *         fread(&header_bytes, 1, number_of_points, in_binary_file)             # <<<<<<<<<<<<<<
+ *         fread(header_bytes, 1, number_of_points, in_binary_file)             # <<<<<<<<<<<<<<
  * 
  *     fclose(in_binary_file)
  */
-    (void)(fread((&__pyx_v_header_bytes), 1, __pyx_v_number_of_points, __pyx_v_in_binary_file));
+    (void)(fread(__pyx_v_header_bytes, 1, __pyx_v_number_of_points, __pyx_v_in_binary_file));
   }
   __pyx_L3:;
 
   /* "cython_binary/cython_binary.pyx":30
- *         fread(&header_bytes, 1, number_of_points, in_binary_file)
+ *         fread(header_bytes, 1, number_of_points, in_binary_file)
  * 
  *     fclose(in_binary_file)             # <<<<<<<<<<<<<<
  *     return header_bytes
